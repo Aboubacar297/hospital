@@ -1,0 +1,19 @@
+# Framework Web
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# Base de données et ORM
+sqlalchemy==2.0.25
+alembic==1.13.1
+
+# Authentification et Sécurité
+pyjwt==2.8.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# Validation de données et Environnement
+pydantic[email]==2.5.3
+python-decouple==3.8
+
+# Utilitaires
+python-dateutil==2.8.2

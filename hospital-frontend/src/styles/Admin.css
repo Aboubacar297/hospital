@@ -1,0 +1,71 @@
+/* Couleurs Médicales */
+:root {
+    --medical-blue: #0056b3;
+    --medical-blue-hover: #004494;
+    --medical-light-blue: #e0f2fe;
+}
+
+/* Header de page */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Bouton Plein Bleu */
+.btn-blue-primary {
+    background-color: var(--medical-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-blue-primary:hover {
+    background-color: var(--medical-blue-hover);
+    transform: translateY(-2px);
+}
+
+/* Bouton Outline Bleu (Retour) */
+.btn-blue-outline {
+    background-color: transparent;
+    color: var(--medical-blue);
+    border: 2px solid var(--medical-blue);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.btn-blue-outline:hover {
+    background-color: var(--medical-light-blue);
+}
+
+/* Badges de rôle */
+.role-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.role-badge.medecin { background: #dcfce7; color: #166534; }
+.role-badge.admin { background: #fef3c7; color: #92400e; }
+.role-badge.secretaire { background: #f3e8ff; color: #6b21a8; }
